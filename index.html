@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX QuickAudit | Expert UX Audit Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="sticky-nav">
+        <div class="logo">UX QuickAudit</div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-icon-container">
+            <img src="assets/logo-star.svg" alt="UX QuickAudit Star" class="star-main">
+        </div>
+        <h1>Fundamenta tu diseño en segundos.</h1>
+        <p class="hero-desc">
+            Accede a pautas críticas de usabilidad y accesibilidad adaptadas de tu producto.<br>
+            Encuentra la base técnica que necesitas para validar y defender cada decisión.
+        </p>
+        <div class="hero-badges">
+            <span>⚡ CONSULTA RÁPIDA</span>
+            <span>📚 BASE CIENTÍFICA</span>
+            <span>🛠️ SIN PLUGINS</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="selection-block">
+            <h2 class="section-title">Para empezar, ¿en qué producto vas a trabajar?</h2>
+            <div id="category-selector" class="category-grid">
+                <button class="cat-btn active" data-cat="landing-page">landing page</button>
+                <button class="cat-btn" data-cat="ecommerce">ecommerce</button>
+                <button class="cat-btn" data-cat="dashboard">dashboard</button>
+                <button class="cat-btn" data-cat="formulario">formulario</button>
+            </div>
+        </section>
+
+        <section class="tabs-block">
+            <h2 class="section-title">Elige un enfoque para empezar la auditoría</h2>
+            
+            <div class="tabs-wrapper">
+                <div id="tabs-selector" class="segmented-control">
+                    <button class="tab-btn active" data-tab="usabilidad">
+                        <img src="assets/ray-icon.svg" class="tab-icon" alt=""> Heurísticas y Usabilidad
+                    </button>
+                    <button class="tab-btn" data-tab="accesibilidad">
+                        <img src="assets/eye-icon.svg" class="tab-icon" alt=""> Accesibilidad
+                    </button>
+                    <button class="tab-btn" data-tab="psicologia">
+                        <img src="assets/brain-icon.svg" class="tab-icon" alt=""> Psicología del diseño
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-container">
+            <div class="block-header">
+                <img id="current-icon" src="assets/ray-icon.svg" class="header-icon-svg" alt="icon">
+                <h2 id="current-title" class="results-title">Heurísticas y Usabilidad</h2>
+            </div>
+            
+            <p id="current-desc" class="small-text">Cargando descripción...</p>
+            
+            <p class="action-instruction">Selecciona los puntos críticos que detectes útiles para tu informe:</p>
+
+            <div id="cards-grid" class="cards-grid"></div>
+        </section>
+
+        <section class="audit-finish">
+            <h2 class="section-title">¿Tienes tu auditoría ya preparada?</h2>
+            <p class="finish-desc">Se copiarán los argumentos técnicos de todas las tarjetas que hayas marcado para que puedas pegarlos en tu documento de diseño.</p>
+            <button id="copy-btn">Copiar informe seleccionado</button>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p><strong>UX QuickAudit</strong>, 2026. Diseñado y desarrollado por Virginia M. Ramos. 
+            <p>Proyecto Final Máster UX/UI + Front-End Development.</p>
+            <p class="footer-sources">
+                Fuentes de consulta: 
+                <a href="https://www.nngroup.com/" target="_blank">NNGroup</a> 
+                <a href="https://lawsofux.com/" target="_blank">Laws of UX</a>  
+                <a href="https://www.w3.org/TR/WCAG21/" target="_blank">W3C Standards</a>
+            </p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/virginiamramos" target="_blank">
+                    <img src="assets/linkedin-icon.svg" alt="LinkedIn" class="social-icon"> LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
