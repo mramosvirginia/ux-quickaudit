@@ -120,11 +120,12 @@ a { color: inherit; }
     padding: 24px;
 }
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.card-title { font-size: 18px; line-height: 26px; font-weight: 600; }
+.card-title { display: flex; align-items: center; gap: 8px; font-size: 18px; line-height: 26px; font-weight: 600; }
+.card-title::after { content: ""; display: none; flex: none; margin-left: auto; width: 24px; height: 24px; border-radius: 50%; align-items: center; justify-content: center; color: var(--text-inverse); font-size: 14px; line-height: 1; font-weight: 800; }
+.card[data-status="cumple"] .card-title::after { display: inline-flex; content: "✓" / ""; background: var(--success-text); }
+.card[data-status="falta"] .card-title::after { display: inline-flex; content: "!" / ""; background: var(--danger-text); }
+.card[data-status="noaplica"] .card-title::after { display: inline-flex; content: "–" / ""; background: var(--text-secondary); }
 .card-text { font-size: 14px; line-height: 22px; color: var(--text-secondary); }
-.card[data-status="cumple"] { background: var(--success-subtle); border-color: var(--success-border); }
-.card[data-status="falta"] { background: var(--bg-subtle); border-color: var(--text-primary); }
-.card[data-status] .tag { background: rgba(255, 255, 255, 0.7); }
 
 .tag { display: inline-block; font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: 0.02em; background: var(--bg-subtle); color: var(--text-secondary); padding: 4px 12px; border-radius: var(--radius-full); }
 
