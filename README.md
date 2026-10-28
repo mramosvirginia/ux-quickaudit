@@ -1,25 +1,28 @@
 # UX QuickAudit
 
-A simple web tool to find and copy UX design arguments. It helps designers justify their decisions using established usability and accessibility principles.
+Auditoría de UX guiada con fuentes verificadas. Valoras cada punto de un producto digital, priorizas lo que falta y copias un informe con tus hallazgos. No usa IA, no pide registro y todo ocurre en el navegador.
 
-### 📱 Mobile-adapted design
-The interface has been adjusted to provide a functional experience on mobile devices, allowing users to consult and select guidelines on the go.
+**Demo:** https://mramosvirginia.github.io/ux-quickaudit/
 
-### How to use it:
-1. **Pick a product**: Choose between Landing Page, Ecommerce, Dashboard, or Form.
-2. **Select a category**: Choose from Usability, Accessibility, or Psychology.
-3. **Select guidelines**: Click on the cards you want to include in your report.
-4. **Copy**: Hit the "Copiar informe" button to get all the text ready to paste into your design document.
+## Cómo se usa
+1. **Elige qué revisar:** tipo de producto (landing page, ecommerce, dashboard o formulario) y enfoque (usabilidad, accesibilidad o psicología del diseño).
+2. **Valora cada punto:** *Cumple*, *Falta* o *No aplica*. Si falta, asigna una prioridad (Crítica, Alta o Mejora; Alta por defecto) y añade una nota sobre tu caso.
+3. **Copia tu informe** en texto o en Markdown. Incluye los hallazgos agrupados por prioridad, con su origen y su siguiente paso, además de lo que cumple, lo que no aplica y las referencias.
 
-### Tech used:
-- **HTML5 & CSS3**: Advanced use of **Grid** and **Flexbox** for layout structure and mobile adaptation.
-- **Vanilla JavaScript**: Custom logic for data filtering and clipboard management.
-- No external libraries or frameworks.
+La página incluye un informe de ejemplo ficticio para ver el resultado antes de empezar. El tiempo de una revisión es de aproximadamente un minuto por tipo de producto y enfoque (estimación propia, no medida).
 
-### Sources:
-Guidelines are based on **NNGroup**, **Laws of UX**, and **W3C** standards.
+## Contenido
+96 puntos: 4 productos × 3 enfoques × 8 puntos. Cada punto indica su origen (NN/g, criterio WCAG, Laws of UX, Gestalt, psicología conductual o buena práctica del sector) y un siguiente paso concreto. En lugar de un enlace por punto, hay tres referencias generales en el pie de página.
 
----
-**Live Demo**: [https://mramosvirginia.github.io/ux-quickaudit/](https://mramosvirginia.github.io/ux-quickaudit/)  
-**Author**: Virginia M. Ramos  
-**Project**: Final Master's Project (UX/UI + Front-End)
+Qué no hace: no analiza capturas ni evalúa el producto por ti. Guía la revisión con un criterio fijo; la valoración es tuya.
+
+## Estado y pendientes
+- Algunos puntos de NN/g están pendientes de contrastar con la fuente exacta.
+- Las tres URL de referencia deben comprobarse antes de cada publicación.
+- Falta probarla con otras personas y medir el tiempo real de una revisión.
+
+## Tecnología
+HTML, CSS y JavaScript sin librerías ni dependencias. Los datos están en `data.js`; el estado de la auditoría vive en memoria y no se guarda. Valoración con grupos de radio nativos (accesibles con teclado), foco visible, región `aria-live` para avisos y diseño adaptado a móvil con barra de informe fija abajo. Diseño y componentes en Figma, con variables que coinciden con los tokens de `style.css`.
+
+## Autoría
+Proyecto propio de Virginia M. Ramos · 2026. Licencia MIT.

@@ -3,98 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX QuickAudit | Expert UX Audit Tool</title>
+    <title>UX QuickAudit | Auditoría de UX guiada con fuentes verificadas</title>
+    <meta name="description" content="Auditoría de UX guiada: valora cada punto, prioriza lo que falta y copia un informe con tus hallazgos. Criterios de NN/g, WCAG 2.2 y Laws of UX.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#herramienta">Saltar a la herramienta</a>
 
-    <nav class="sticky-nav">
-        <div class="logo">UX QuickAudit</div>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-icon-container">
-            <img src="assets/logo-star.svg" alt="UX QuickAudit Star" class="star-main">
-        </div>
-        <h1>Fundamenta tu diseño en segundos.</h1>
-        <p class="hero-desc">
-            Accede a pautas críticas de usabilidad y accesibilidad adaptadas de tu producto.<br>
-            Encuentra la base técnica que necesitas para validar y defender cada decisión.
-        </p>
-        <div class="hero-badges">
-            <span>⚡ CONSULTA RÁPIDA</span>
-            <span>📚 BASE CIENTÍFICA</span>
-            <span>🛠️ SIN PLUGINS</span>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#">UX QuickAudit</a>
+            <nav aria-label="Principal">
+                <a class="nav-link" href="#referencias">Referencias</a>
+            </nav>
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="selection-block">
-            <h2 class="section-title">Para empezar, ¿en qué producto vas a trabajar?</h2>
-            <div id="category-selector" class="category-grid">
-                <button class="cat-btn active" data-cat="landing-page">landing page</button>
-                <button class="cat-btn" data-cat="ecommerce">ecommerce</button>
-                <button class="cat-btn" data-cat="dashboard">dashboard</button>
-                <button class="cat-btn" data-cat="formulario">formulario</button>
-            </div>
-        </section>
-
-        <section class="tabs-block">
-            <h2 class="section-title">Elige un enfoque para empezar la auditoría</h2>
-            
-            <div class="tabs-wrapper">
-                <div id="tabs-selector" class="segmented-control">
-                    <button class="tab-btn active" data-tab="usabilidad">
-                        <img src="assets/ray-icon.svg" class="tab-icon" alt=""> Heurísticas y Usabilidad
-                    </button>
-                    <button class="tab-btn" data-tab="accesibilidad">
-                        <img src="assets/eye-icon.svg" class="tab-icon" alt=""> Accesibilidad
-                    </button>
-                    <button class="tab-btn" data-tab="psicologia">
-                        <img src="assets/brain-icon.svg" class="tab-icon" alt=""> Psicología del diseño
-                    </button>
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <h1>Auditoría de UX guiada, con fuentes verificadas</h1>
+                <p class="hero-desc">Valora cada punto, prioriza lo que falta y copia un informe con tus hallazgos. Criterios de NN/g, WCAG 2.2 y Laws of UX.</p>
+                <div class="hero-cta">
+                    <a class="hero-btn" href="#herramienta">Empezar una revisión</a>
+                    <span class="hero-facts">96 puntos · 4 tipos de producto · Gratis y sin registro</span>
                 </div>
             </div>
+            <ul class="hero-cards" aria-label="Enfoques disponibles">
+                <li class="hero-card" data-focus="usabilidad">
+                    <span class="hero-card-num">32</span>
+                    <span class="hero-card-body"><span class="hero-card-name">Usabilidad</span><span class="hero-card-desc">Heurísticas de NN/g adaptadas a cada tipo de producto.</span></span>
+                </li>
+                <li class="hero-card" data-focus="accesibilidad">
+                    <span class="hero-card-num">32</span>
+                    <span class="hero-card-body"><span class="hero-card-name">Accesibilidad</span><span class="hero-card-desc">Criterios WCAG 2.2 explicados en lenguaje claro.</span></span>
+                </li>
+                <li class="hero-card" data-focus="psicologia">
+                    <span class="hero-card-num">32</span>
+                    <span class="hero-card-body"><span class="hero-card-name">Psicología del diseño</span><span class="hero-card-desc">Leyes y principios aplicados a interfaces.</span></span>
+                </li>
+            </ul>
         </section>
 
-        <section class="results-container">
-            <div class="block-header">
-                <img id="current-icon" src="assets/ray-icon.svg" class="header-icon-svg" alt="icon">
-                <h2 id="current-title" class="results-title">Heurísticas y Usabilidad</h2>
+        <section class="how container" aria-labelledby="how-title">
+            <h2 id="how-title" class="sr-only">Cómo funciona</h2>
+            <ol class="how-steps">
+                <li><span class="how-title">01 · Elige producto y enfoque</span><span class="how-desc">Landing, ecommerce, dashboard o formulario.</span></li>
+                <li><span class="how-title">02 · Valora cada punto</span><span class="how-desc">Cumple, Falta o No aplica, con prioridad y nota.</span></li>
+                <li><span class="how-title">03 · Copia tu informe</span><span class="how-desc">Con tus hallazgos, su origen y su siguiente paso.</span></li>
+            </ol>
+            <a class="text-link" href="#ejemplo">Ver un informe de ejemplo ↓</a>
+        </section>
+
+        <section id="herramienta" class="tool container" aria-label="Herramienta de auditoría">
+            <div class="phase">
+                <header class="phase-head">
+                    <h2>01 · Elige qué revisar</h2>
+                    <p>Tipo de producto y enfoque.</p>
+                </header>
+                <div class="config">
+                    <fieldset class="step">
+                        <legend class="step-title">Tipo de producto</legend>
+                        <div id="category-selector" class="chips">
+                            <button type="button" class="chip" data-cat="landing-page" aria-pressed="true">landing page</button>
+                            <button type="button" class="chip" data-cat="ecommerce" aria-pressed="false">ecommerce</button>
+                            <button type="button" class="chip" data-cat="dashboard" aria-pressed="false">dashboard</button>
+                            <button type="button" class="chip" data-cat="formulario" aria-pressed="false">formulario</button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="step">
+                        <legend class="step-title">Enfoque</legend>
+                        <div id="tabs-selector" class="tabs">
+                            <button type="button" class="tab" data-tab="usabilidad" aria-pressed="true">
+                                <img src="assets/ray-icon.svg" class="tab-icon" alt="" width="22" height="22"> Heurísticas y Usabilidad
+                            </button>
+                            <button type="button" class="tab" data-tab="accesibilidad" aria-pressed="false">
+                                <img src="assets/eye-icon.svg" class="tab-icon" alt="" width="22" height="22"> Accesibilidad
+                            </button>
+                            <button type="button" class="tab" data-tab="psicologia" aria-pressed="false">
+                                <img src="assets/brain-icon.svg" class="tab-icon" alt="" width="22" height="22"> Psicología del diseño
+                            </button>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
-            
-            <p id="current-desc" class="small-text">Cargando descripción...</p>
-            
-            <p class="action-instruction">Selecciona los puntos críticos que detectes útiles para tu informe:</p>
 
-            <div id="cards-grid" class="cards-grid"></div>
+            <div class="work">
+                <section class="phase results" aria-labelledby="phase2-title">
+                    <header class="phase-head">
+                        <h2 id="phase2-title">02 · Valora cada punto</h2>
+                        <p>Marca si cumple, falta o no aplica.</p>
+                    </header>
+                    <h3 id="current-title" class="results-title"></h3>
+                    <p id="current-desc" class="results-desc"></p>
+                    <ul id="cards-grid" class="cards"></ul>
+                </section>
+
+                <section class="phase" aria-labelledby="phase3-title">
+                    <header class="phase-head">
+                        <h2 id="phase3-title">03 · Tu informe</h2>
+                        <p>Se construye con tus hallazgos.</p>
+                    </header>
+                    <aside class="report" aria-label="Informe">
+                        <div class="report-head">
+                            <h3>Tu informe</h3>
+                            <span id="report-count" class="count-pill">0 valorados</span>
+                        </div>
+                        <p id="report-summary" class="report-summary" hidden></p>
+                        <p id="report-empty" class="report-empty">Valora puntos en las tarjetas y aparecerán aquí como hallazgos, con su origen y su siguiente paso.</p>
+                        <ul id="report-list" class="report-list"></ul>
+                        <div class="report-actions">
+                            <button type="button" id="copy-btn" class="btn btn-primary" disabled>Copiar informe</button>
+                            <button type="button" id="copy-md-btn" class="btn btn-secondary" disabled>Copiar en Markdown</button>
+                            <button type="button" id="clear-btn" class="btn-text" hidden>Vaciar informe</button>
+                        </div>
+                        <p class="privacy">Todo ocurre en tu navegador. No se guarda ni se envía nada.</p>
+                    </aside>
+                </section>
+            </div>
         </section>
 
-        <section class="audit-finish">
-            <h2 class="section-title">¿Tienes tu auditoría ya preparada?</h2>
-            <p class="finish-desc">Se copiarán los argumentos técnicos de todas las tarjetas que hayas marcado para que puedas pegarlos en tu documento de diseño.</p>
-            <button id="copy-btn">Copiar informe seleccionado</button>
+        <section id="ejemplo" class="sample container" aria-labelledby="sample-title">
+            <h2 id="sample-title" class="sample-title">Así queda un informe</h2>
+            <p class="sample-desc">Ejemplo ficticio de una landing revisada en accesibilidad. Los datos no son de un producto real.</p>
+            <div class="report report-sample">
+                <div class="report-head">
+                    <h3>Tu informe</h3>
+                    <span id="sample-count" class="count-pill has-items"></span>
+                </div>
+                <p id="sample-summary" class="report-summary"></p>
+                <ul id="sample-list" class="report-list"></ul>
+            </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-container">
-            <p><strong>UX QuickAudit</strong>, 2026. Diseñado y desarrollado por Virginia M. Ramos. 
-            <p>Proyecto Final Máster UX/UI + Front-End Development.</p>
-            <p class="footer-sources">
-                Fuentes de consulta: 
-                <a href="https://www.nngroup.com/" target="_blank">NNGroup</a> 
-                <a href="https://lawsofux.com/" target="_blank">Laws of UX</a>  
-                <a href="https://www.w3.org/TR/WCAG21/" target="_blank">W3C Standards</a>
-            </p>
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/virginiamramos" target="_blank">
-                    <img src="assets/linkedin-icon.svg" alt="LinkedIn" class="social-icon"> LinkedIn
-                </a>
+    <footer id="referencias" class="footer">
+        <div class="stripe" aria-hidden="true"></div>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-intro">
+                    <p class="footer-brand">UX QuickAudit</p>
+                    <p class="footer-claim">Decisiones de diseño con criterio y con fuente.</p>
+                    <a class="footer-cta" href="#herramienta">Empezar una revisión</a>
+                </div>
+                <div class="footer-refs">
+                    <p class="footer-label">Referencias</p>
+                    <ul id="refs-list" class="ref-cards"></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Proyecto propio de Virginia M. Ramos · 2026</p>
+                <ul class="footer-links">
+                    <li><a href="https://www.linkedin.com/in/virginiamramos" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/mramosvirginia/ux-quickaudit" target="_blank" rel="noopener">Código en GitHub</a></li>
+                    <li><a href="#">Volver arriba</a></li>
+                </ul>
             </div>
         </div>
     </footer>
+
+    <div class="mobile-bar" aria-label="Resumen del informe">
+        <div class="mobile-bar-text">
+            <strong id="bar-count">0 valorados</strong>
+            <span>en tu informe</span>
+        </div>
+        <button type="button" id="bar-copy" class="btn btn-primary" disabled>Copiar</button>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="data.js"></script>
     <script src="app.js"></script>
