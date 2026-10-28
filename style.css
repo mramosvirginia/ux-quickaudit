@@ -142,11 +142,9 @@ a { color: inherit; }
 .opt-priority .opt-pill { font-size: 13px; line-height: 16px; padding: 4px 12px; }
 .opt:hover .opt-pill { background: var(--bg-subtle); }
 .opt-icon { display: none; flex: none; }
-.opt-input:checked + .opt-pill .opt-icon { display: block; }
+.opt-input:checked + .opt-pill .opt-icon { display: none; }
 .opt-input:focus-visible + .opt-pill { outline: 3px solid var(--focus-ring); outline-offset: 2px; }
-.opt-input:checked + .opt-cumple { background: var(--success-subtle); border-color: var(--success-border); border-width: 2px; padding: 5.5px 15.5px; color: var(--success-text); }
-.opt-input:checked + .opt-falta { background: var(--danger-subtle); border-color: var(--danger-text); border-width: 2px; padding: 5.5px 15.5px; color: var(--danger-text); }
-.opt-input:checked + .opt-noaplica { background: var(--bg-subtle); border-color: var(--text-secondary); border-width: 2px; padding: 5.5px 15.5px; }
+.opt-input:checked + .opt-cumple, .opt-input:checked + .opt-falta, .opt-input:checked + .opt-noaplica,
 .opt-input:checked + .opt-critica, .opt-input:checked + .opt-alta, .opt-input:checked + .opt-mejora { background: var(--bg-inverse); border-color: var(--bg-inverse); color: var(--text-inverse); }
 .extra { display: flex; flex-direction: column; gap: 12px; }
 .extra[hidden] { display: none; }
