@@ -122,6 +122,9 @@ a { color: inherit; }
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .card-title { font-size: 18px; line-height: 26px; font-weight: 600; }
 .card-text { font-size: 14px; line-height: 22px; color: var(--text-secondary); }
+.card[data-status="cumple"] { background: var(--success-subtle); border-color: var(--success-border); }
+.card[data-status="falta"] { background: var(--bg-subtle); border-color: var(--text-primary); }
+.card[data-status] .tag { background: rgba(255, 255, 255, 0.7); }
 
 .tag { display: inline-block; font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: 0.02em; background: var(--bg-subtle); color: var(--text-secondary); padding: 4px 12px; border-radius: var(--radius-full); }
 
