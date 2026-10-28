@@ -199,7 +199,9 @@ a { color: inherit; }
 .sample { padding-top: 48px; padding-bottom: 96px; border-top: 1px solid var(--border-default); }
 .sample-title { font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
 .sample-desc { color: var(--text-secondary); margin-bottom: 24px; }
-.report-sample { position: static; max-width: 440px; }
+.report-sample { position: static; max-width: none; }
+.report-sample .report-list { display: block; columns: 3 260px; column-gap: 24px; }
+.report-sample .report-group { break-inside: avoid; margin-bottom: 24px; }
 
 /* Botones */
 .btn { font-size: 14px; line-height: 20px; font-weight: 600; padding: 12px 24px; border-radius: var(--radius-full); cursor: pointer; border: 1.5px solid transparent; }
